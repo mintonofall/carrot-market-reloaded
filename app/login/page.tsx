@@ -13,17 +13,10 @@ export default function CreateAccount() {
       </div>
       <form className="flex flex-col gap-3">
         <div className="flex flex-col gap-2">
-          <FormInput type="text" placeholder="Username" required errors={[]} />
           <FormInput type="email" placeholder="Email" required errors={[]} />
           <FormInput
             type="password"
             placeholder="Password"
-            required
-            errors={[]}
-          />
-          <FormInput
-            type="password"
-            placeholder="Confirm Password"
             required
             errors={[]}
           />

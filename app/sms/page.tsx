@@ -9,31 +9,25 @@ export default function CreateAccount() {
     <div className="flex flex-col gap-10 px-8 py-6">
       <div className="flex flex-col gap-2 *:font-medium">
         <h1>안녕하세요</h1>
-        <h2>Fill in the form below to join</h2>
+        <h2>Verify your phone number</h2>
       </div>
       <form className="flex flex-col gap-3">
         <div className="flex flex-col gap-2">
-          <FormInput type="text" placeholder="Username" required errors={[]} />
-          <FormInput type="email" placeholder="Email" required errors={[]} />
           <FormInput
-            type="password"
-            placeholder="Password"
+            type="string"
+            placeholder="Phone number"
             required
             errors={[]}
           />
           <FormInput
-            type="password"
-            placeholder="Confirm Password"
+            type="string"
+            placeholder="Verification code"
             required
             errors={[]}
           />
         </div>
-        <FormButton loading={false} text="Create Account" />
+        <FormButton loading={false} text="Verify" />
       </form>
-      <div className="w-full h-px bg-neutral-500" />
-      <div className="flex flex-col gap-2">
-        <SocialLogin />
-      </div>
     </div>
   );
 }
