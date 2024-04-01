@@ -35,7 +35,7 @@ export default function Login() {
             type="password"
             placeholder="Password"
             name="password"
-            errors={state?.errors ?? []}
+            errors={[]}
           />
         </div>
         <FormButton text="Log In" type="submit" />

@@ -1,8 +1,9 @@
 import Link from "next/link";
+import "@/app/lib/db";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-between min-h-screen p-6">
+    <div className="flex flex-col items-center justify-between min-h-screen p-6 pb-28">
       <div className="my-auto font-medium">
         <span className="text-9xl">🥕</span>
         <h1 className="text-4xl">당근</h1>
