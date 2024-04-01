@@ -8,8 +8,9 @@ import smsLogin from "./action";
 import { useFormState } from "react-dom";
 
 export default function CreateAccount() {
-  const intialState = { token: true };
-  const [state, action] = useFormState(smsLogin, intialState);
+  const initialState = { token: true };
+  const [state, action] = useFormState(smsLogin, initialState); // Provide the correct generic types to useFormState
+  // const [state, action] = useFormState(smsLogin, intialState);
   return (
     <div className="flex flex-col gap-10 px-8 py-6">
       <div className="flex flex-col gap-2 *:font-medium">

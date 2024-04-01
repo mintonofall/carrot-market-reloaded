@@ -12,13 +12,12 @@ const phoneSchema = z.object({
 });
 
 interface ActionState{
-    token: boolean;
+    token?: boolean;
 
 }
 
 export default async function smsLogin(prevState: ActionState, formData: FormData) {
     const token = formData.get("token");
-    console.log("token false : ",token);
     if(!prevState.token){
         const data = { phoneNumber: formData.get("phoneNumber")};
         const result = phoneSchema.safeParse(data);
