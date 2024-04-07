@@ -13,7 +13,7 @@ export default function CreateAccount() {
   return (
     <div className="flex flex-col gap-10 px-8 py-6">
       <div className="flex flex-col gap-2 *:font-medium">
-        <h1>안녕하세요</h1>
+        <h1>안녕하세요..</h1>
         <h2>Verify your phone number</h2>
       </div>
       <form action={action} className="flex flex-col gap-3">
