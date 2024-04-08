@@ -2,7 +2,7 @@
 
 import { resolve } from "path";
 import z from "zod";
-import db from "../lib/db";
+import db from "../../lib/db";
 import { IronSession, getIronSession } from "iron-session";
 import { cookies } from "next/headers";
 import bcrypt from "bcrypt";

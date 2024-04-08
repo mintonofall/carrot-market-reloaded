@@ -2,11 +2,11 @@
 
 import { redirect } from "next/navigation";
 import z from "zod";
-import db from "../lib/db";
+import db from "../../../lib/db";
 import { IronSession, getIronSession } from "iron-session";
 import { cookies } from "next/headers";
 import bcrypt from "bcrypt";
-import getSession from "../lib/session";
+import getSession from "../../../lib/session";
 
 const checkUsername = (username: string) => !username.includes("potato");
 const checkPassword = (password: string, confirmPassword:string) => { return password === confirmPassword; };
